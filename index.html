@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <form action="" method="post" class="cities">
-        <select name="city" id="city">
-            <option value="Curitiba" selected>Curitiba</option>
-            <option value="São Paulo">São Paulo</option>
-            <option value="Rio De Janeiro">Rio de Janeiro</option>
-        </select>
+      <select name="city" id="city">
+        <option value="Curitiba" selected>Curitiba</option>
+        <option value="São Paulo">São Paulo</option>
+        <option value="Rio De Janeiro">Rio de Janeiro</option>
+      </select>
 
-        <script src="weatherAPI.js"></script>
-        <button id="button" onclick="getWeather()">Executar</button>
+      <script src="weatherAPI.js"></script>
+      <button id="button" onclick="getWeather()">Executar</button>
     </form>
 
     <div class="weather_info">
-        <h2 class="conditions">Condições atuais do tempo: <span id="weather_cond"></span> </h2>
-        <h2 class="temperature">Temperatura: <span id="weather_temp"></span> </h2>
-        <h2 class="humidity">Umidade: <span id="weather_humidity"></span> </h2>
-        <h2 class="rain">Chuva (mm): <span id="rain_cond"></span> </h2>
+      <h2 class="conditions">
+        Condições atuais do tempo: <span id="weather_cond"></span>
+      </h2>
+      <h2 class="temperature">Temperatura: <span id="temp">--</span>°C</h2>
+      <h2 class="humidity">Umidade: <span id="humidity">--</span>%</h2>
+      <h2 class="rain">Chuva (mm): <span id="rain_cond">0</span> mm</h2>
     </div>
-</body>
+  </body>
 </html>
